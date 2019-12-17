@@ -1,0 +1,13 @@
+year = int(input("inserisci l'anno: "))
+is_leap = (year % 4 == 0 and year % 100 != 0 or year % 400 == 0)
+print(is_leap)
+#计算闰年
+
+import math
+raggio = float(input("Inserischi il raggio: "))
+perimetro = raggio * 2 * math.pi
+area = raggio * raggio * 2
+
+print("il perimetro è: ", perimetro.decimal)
+print("L'area è ", area)
+# calcolo del raggio e dell'area
