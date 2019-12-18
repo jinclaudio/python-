@@ -1,0 +1,25 @@
+score = int(input("inserisci il tuip punteggio: "))
+if score > 90:
+    grade = "A"
+elif score > 80:
+    grade = "B"
+elif score > 70:
+    grade = "C"
+elif score > 60:
+    grade = "D"
+else:
+    grade = "E"
+print("Il tuo grado è ", grade)
+# 分数评价
+
+a = int(input("输入第一条边:"))
+b = int(input("输入第二条边: "))
+c = int(input("输入第三条边:"))
+if a+b>c and b + c > a and c + a > b:
+    p = (a+b+c)/2
+    area = p*(p-a)*(p-b)*(p-c)**0.5
+    print("周长是 : ", 2*p)
+    print("面积是 : ", area)
+else :
+    print("这不是一个三角形！")
+#计算三角形的周长和面积
