@@ -1,0 +1,14 @@
+righe = int(input("inserisci il numero di righe: "))
+for i in range (righe):
+    for _ in range(i+1):
+        print('*', end= "")
+    print()
+
+for i in range(righe):
+    for j in range (righe):
+        if j < righe - i - 1:
+            print(" ", end= "")
+        else:
+            print("*", end= "")
+    print()
+#打印三角形图案
